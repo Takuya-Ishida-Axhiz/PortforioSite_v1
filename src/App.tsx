@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider } from "@chakra-ui/provider";
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
+import { theme } from "./theme/theme";
+import { Router } from "./router/Router";
+import { Fonts } from "./organisms/layout/fonts";
+import { AnimatePresence } from "framer-motion";
+import { RecoilRoot } from "recoil";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider theme={theme}>
+      <RecoilRoot>
+        <AnimatePresence exitBeforeEnter initial={true}>
+          <BrowserRouter>
+            <Router />
+          </BrowserRouter>
+        </AnimatePresence>
+      </RecoilRoot>
+    </ChakraProvider>
   );
 }
-
-export default App;
