@@ -25,13 +25,14 @@ export const WorkDetailPage = () => {
         <ChevronRightIcon />
         &nbsp;
       </span>
-      <Heading display="inline-block" as="h3" fontSize={25} mb={4}>
-        {detail.title}
-      </Heading>
-      <Badge colorScheme="green" ml={4}>
-        {detail.releaseDate}
-      </Badge>
-
+      <HStack>
+        <Heading display="inline-block" as="h3" fontSize={25} mb={1} p={6}>
+          {detail.title}
+        </Heading>
+        <Badge colorScheme="green" mx={4}>
+          {detail.releaseDate}
+        </Badge>
+      </HStack>
       <Image
         borderRadius="lg"
         w="full"

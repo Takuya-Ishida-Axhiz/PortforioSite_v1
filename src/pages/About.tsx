@@ -16,7 +16,7 @@ export const AboutPage = () => {
   return (
     <div>
       <Layout title="About">
-        <Heading p={6} mt={10} as="h3" variant="section-title">
+        <Heading my={10} as="h3" variant="section-title">
           About
         </Heading>
 
@@ -50,12 +50,12 @@ export const AboutPage = () => {
                   <br />
                   <Text>現在はPython・Reactをメイン技術として、</Text>
                   <Text>
-                    AWSを中心としたサーバレスアーキテクチャを使いより拡張性や保守性の高いシステムを構築することが得意。
+                    AWSを中心としたサーバレスアーキテクチャを使いより拡張性が高くメンテナンスコストが低いシステムを構築することが得意。
                   </Text>
                   <br />
                   <Text>自分が作ったモノが動くことへの感動や、</Text>
                   <Text>
-                    日々新しいことを知って昨日の自分より強くなっていると実感することがモチベーションとなっている。
+                    日々新しいことを知ることで昨日の自分より強くなっていると実感することがモチベーションとなっている。
                   </Text>
                   <br />
                   <Text>

@@ -114,9 +114,7 @@ export const HomePage = () => {
                         「あれ？これもしかして本当に最高なんじゃないか？」
                       </Text>
 
-                      <Text textAlign="center">
-                        ってなったら最高だと思う。{" "}
-                      </Text>
+                      <Text textAlign="center">ってなったら最高だと思う。</Text>
                     </Box>
                   </ScrollRevealContainer>
 
