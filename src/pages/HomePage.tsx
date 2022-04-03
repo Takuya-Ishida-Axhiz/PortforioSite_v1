@@ -40,7 +40,7 @@ export const HomePage = () => {
               </Box>
               <Avatar />
             </Stack>
-            <Box mt={10}>
+            {/* <Box mt={10}>
               <VhStylesComponent>
                 <Center>
                   <ScrollRevealContainer>
@@ -128,7 +128,7 @@ export const HomePage = () => {
                   </ScrollRevealContainer>
                 </Stack>
               </Center>
-            </Box>
+            </Box> */}
           </Container>
         </Center>
         {/* </ScrollRevealContainer> */}
